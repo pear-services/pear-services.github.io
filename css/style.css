@@ -15,6 +15,14 @@
     margin:0;
     padding:0;
   }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
    /* centre the content in the parallax layers */
   .centre {
@@ -25,7 +33,10 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
+  
+  .white {
+    color: #fff;
+  }
  
  /* Parallax base styles
   --------------------------------------------- */
@@ -88,23 +99,13 @@
 
 /* group styles
 --------------------------------------------- */
-
-  #group1 .parallax__layer--back {
-      background: rgb(255,255,255) url("../img!/pear-sq.png") no-repeat center;
-  }
-  
-  #group2 {
-    height: 85vh;
-  }
   
   #group2 .parallax__layer--base {
     background: url("../img/pear-on-tree.jpg") center;
   }
   
-  #group3 > footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  #group2 .parallax__layer--fore .centre {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
