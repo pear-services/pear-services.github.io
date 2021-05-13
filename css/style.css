@@ -101,11 +101,15 @@
 --------------------------------------------- */
   
   #group2 .parallax__layer--base {
-    background: url("../img/pear-on-tree.jpg") center;
+    background: url("../img/pear-on-tree.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
   }
   
   #group2 .parallax__layer--fore .centre {
     padding: 25px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
   }
